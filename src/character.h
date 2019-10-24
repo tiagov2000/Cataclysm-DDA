@@ -214,16 +214,15 @@ class Character : public Creature, public visitable<Character>
         };
 
         // Character stats
-        // TODO: Make those protected
-        int str_max;
-        int dex_max;
-        int int_max;
-        int per_max;
+        protected int str_max;
+        protected int dex_max;
+        protected int int_max;
+        protected int per_max;
 
-        int str_cur;
-        int dex_cur;
-        int int_cur;
-        int per_cur;
+        protected int str_cur;
+        protected int dex_cur;
+        protected int int_cur;
+        protected int per_cur;
 
         // The prevalence of getter, setter, and mutator functions here is partially
         // a result of the slow, piece-wise migration of the player class upwards into
